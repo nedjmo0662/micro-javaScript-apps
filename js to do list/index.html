@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../js to do list/css/style.css">
+    <!--  icons -->
+    <link rel="stylesheet" href="../js to do list/js/all.min.js">
+    <link rel="stylesheet" href="../js to do list/css/all.min.css">
+
+    <title>todo list</title>
+</head>
+<body>
+    <header>
+        <h1>Nedjmo's Todo Lisr</h1>
+    </header>
+    <form action="">
+        <input type="text" class="todo-input">
+        <button class="todo-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select name="todos" class="filter-todos">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </form>
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+    <script src="../js to do list/js/main.js"></script>
+</body>
+</html>

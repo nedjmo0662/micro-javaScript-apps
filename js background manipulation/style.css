@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Papyrus", "cursive";
+  color: indigo;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  line-height: 2;
+  background: linear-gradient(to right, purple, pink);
+}
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
