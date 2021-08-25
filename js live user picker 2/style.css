@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f8f9fd;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.container {
+  overflow: hidden;
+  border-radius: 5px;
+  width: 300px;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 20%);
+  /* overflow-y: scroll; */
+}
+.header {
+  background-color: #3d3edb;
+  color: white;
+  padding: 30px 20px;
+}
+.header .title {
+  margin: 0 0 20px;
+  padding: 0;
+}
+.header .subtitle {
+  opacity: 0.8;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.header #input {
+  border-radius: 50px;
+  border: none;
+  padding: 5px 10px;
+  background-color: rgb(0, 0, 0, 0.3);
+  width: 100%;
+}
+.header #input:focus {
+  outline: none;
+}
+.users {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.users::-webkit-scrollbar {
+  width: 6px;
+}
+.users::-webkit-scrollbar-thumb {
+  background-color: #3d3ddb;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.users li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px;
+  margin: 0 10px;
+  text-align: center;
+}
+.users li:not(:last-of-type) {
+  border-bottom: 2px solid #eee;
+}
+.users li img {
+  width: 60px;
+  border-radius: 50%;
+}
+.users li .user-info {
+}
+.users li .user-info p {
+  font-size: 12px;
+}
+li.hide {
+  display: none;
+}

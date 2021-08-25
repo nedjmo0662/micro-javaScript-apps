@@ -105,7 +105,6 @@ function getTodos(e) {
         }else {
             todos = JSON.parse(localStorage.getItem("todos"))
         }
-
         todos.forEach(function(todo){
             //creat div
             const todoDiv = document.createElement("div");

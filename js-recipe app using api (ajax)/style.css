@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+:root {
+  --main-color: #d65108;
+  --main-color-dark: #b54507;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  text-align: center;
+}
+.food-search {
+  margin: 2rem 0;
+}
+.food-search h2 {
+  font-size: 2rem;
+}
+.food-search .search-bar {
+  margin: 1.2rem 0;
+  display: flex;
+  align-items: stretch;
+  width: 50%;
+}
+@media screen and (min-width: 600px) {
+  .food-search .search-bar {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 767px) {
+  .food-search .search-bar {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.food-search .search-bar input {
+  padding: 0 1.2rem;
+  outline: none;
+  border: 1px solid var(--main-color);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  color: var(--main-color);
+  font-family: inherit;
+  font-size: 1.1rem;
+}
+.food-search .search-bar button {
+  width: 55px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  outline: none;
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+}
+
+.food-search .search-bar button i {
+  font-size: 27px;
+}
+.results h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.results .meals {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  overflow-y: scroll;
+}
+.results .meals .meal-item {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 4px 21px -12px rgb(0 0 0 / 79%);
+}
+@media (max-width: 767px) {
+  .results .meals .meal-item {
+    margin: 1rem 0;
+  }
+}
+.results .meals .meal-item .meal-image {
+}
+.results .meals .meal-item .meal-image img {
+  width: 100%;
+  display: block;
+}
+.results .meals .meal-item .meal-content {
+  padding: 1.5rem 0.5rem;
+}
+.results .meals .meal-item .meal-content h4 {
+  font-size: 1.4rem;
+}
+.results .meals .meal-item .meal-content button {
+  background-color: var(--main-color);
+  border: none;
+  outline: none;
+  padding: 0.9rem 2rem;
+  border-radius: 2rem;
+  margin: 1.2rem auto;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.not-found {
+  color: var(--main-color);
+  font-size: 2rem;
+  display: flex !important;
+  justify-content: center;
+}
+.show-recipe {
+  display: block !important;
+}
+.food-info {
+  background-color: var(--main-color);
+  position: fixed;
+  width: 55%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  color: #fff;
+  padding: 2rem;
+  overflow-y: scroll;
+  display: none;
+}
+/* @media (min-width: 992px) {
+  .food-info {
+    width: 540px;
+  }
+}
+@media (max-width: 767px) {
+  .food-info {
+    width: 440px;
+  }
+} */
+@media (max-width: 567px) {
+  .food-info {
+    width: 300px;
+  }
+}
+.food-info .recipe-title {
+}
+.food-info .recipe-category {
+  background: white;
+  color: var(--main-color);
+  width: fit-content;
+  padding: 0.2rem 0.5rem;
+  margin: 0 auto 15px;
+  border-radius: 0.3rem;
+  border: none;
+
+  font-weight: 600;
+  display: inline-block;
+}
+.food-info .recipe-instruction {
+}
+.food-info .recipe-instruction h3 {
+  margin-bottom: 1rem;
+}
+.food-info .recipe-instruction p {
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+.food-info .recipe-image {
+  margin: 0 auto 1rem;
+}
+.food-info .recipe-image img {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.food-info .recipe-link a {
+  color: white;
+  font-size: 1.5rem;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #eee;
+  border-radius: 5px;
+}
+::placeholder {
+  color: var(--main-color);
+  opacity: 1;
+}
+#recipe-close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  /* padding: 20px 20px; */
+  width: 35px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#recipe-close-btn i {
+  font-size: 1.5rem;
+}
